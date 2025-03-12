@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finquarium - Earn Tokens for Your Trading Data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            background-image: radial-gradient(circle at center, rgba(34, 197, 94, 0.15) 0%, transparent 70%);
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(17, 17, 17, 0.8);
+            border-radius: 24px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            box-shadow: 0 0 30px rgba(34, 197, 94, 0.2);
+        }
+        
+        .logo {
+            margin-bottom: 10px;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #22c55e;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        
+        .benefits {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .benefit {
+            width: 48%;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 12px;
+            padding: 15px 10px;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .benefit-text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background: #22c55e;
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.5);
+        }
+        
+        .cta-btn:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(34, 197, 94, 0.6);
+        }
+        
+        .note {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 20px;
+        }
+        
+        .flash {
+            font-size: 16px;
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 25px;
+            animation: flash 1.5s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .coin-icon {
+            display: inline-block;
+            margin: 0 3px;
+        }
+        
+        .platforms {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            opacity: 0.7;
+        }
+        
+        .platform {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .tagline {
+                font-size: 16px;
+            }
+            
+            .benefit {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://finquarium.com/images/logo.png" alt="Finquarium Logo">
+        </div>
+        
+        <h1>Turn Your Trading History Into Rewards</h1>
+        
+        <div class="tagline">Share your trading data privately and earn FIN tokens instantly</div>
+        
+        <div class="flash">
+            <span>⚡</span> No need to repay or invest <span>⚡</span>
+        </div>
+        
+        <div class="benefits">
+            <div class="benefit">
+                <div class="benefit-icon">🔒</div>
+                <div class="benefit-text">Full Privacy Protection</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">💰</div>
+                <div class="benefit-text">Instant Token Rewards</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-text">2-Minute Process</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🔄</div>
+                <div class="benefit-text">Easy Connection</div>
+            </div>
+        </div>
+        
+        <a href="/contribute" class="cta-btn">CLAIM FREE TOKENS NOW</a>
+        
+        <div class="note">
+            Connect your trading account securely to earn <span class="coin-icon">🪙</span> FIN tokens <span class="coin-icon">🪙</span>
+        </div>
+        
+        <div class="platforms">
+            <div class="platform">COINBASE</div>
+            <div class="platform">•</div>
+            <div class="platform">BINANCE</div>
+            <div class="platform">•</div>
+            <div class="platform">MORE COMING SOON</div>
+        </div>
+    </div>
+</body>
+</html>
